@@ -47,6 +47,9 @@
         document.getElementById("textOut").value = textOut;
     };
 
+    let buttonEncrypt = document.getElementById("encrypt");
+    buttonEncrypt.onclick = encrypt;
+
     function decrypt() {
         let textIn;
         let textOut;
@@ -63,9 +66,6 @@
         textOut = allReplace(textIn, dict);
         document.getElementById("textOut").value = textOut;
     };
-
-    let buttonEncrypt = document.getElementById("encrypt");
-    buttonEncrypt.onclick = encrypt;
 
     let buttonDecrypt = document.getElementById("decrypt");
     buttonDecrypt.onclick = decrypt;
