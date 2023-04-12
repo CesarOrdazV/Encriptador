@@ -13,16 +13,17 @@
     <main>
         <section class="input">
             <form action="">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea name="" id="textIn" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             </form>
             <p>¡Sólo letras minúsculas y sin acentos!</p>
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
+            <button id="encrypt">Encriptar</button>
+            <button id="decrypt">Desencriptar</button>
         </section>
 
         <section class="output">
             <p>Ningún mensaje fue encontrado</p>
             <p>Ingrese el texto que desee encriptar o desencriptar.</p>
+            <textarea id="textOut" cols="30" rows="10"></textarea>
         </section>
     </main>
 
@@ -32,3 +33,41 @@
 </body>
 
 </html>
+
+<script>
+
+    let dict = { "a": "ai", "e": "enter", "i": "imes", "o": "ober", "u": "ufat" };
+
+    function encrypt() {
+        let textIn;
+        let textOut;
+
+        textIn = document.getElementById("textIn").value;
+        textOut = textIn.replace(/[aeiou]/g, l => dict[l]);
+        document.getElementById("textOut").value = textOut;
+    };
+
+    function decrypt() {
+        let textIn;
+        let textOut;
+
+        textIn = document.getElementById("textIn").value;
+
+        function allReplace(str, obj) {
+            for (const w in obj) {
+                str = str.replace(new RegExp(obj[w], 'g'), w);
+            }
+            return str;
+        };
+
+        textOut = allReplace(textIn, dict);
+        document.getElementById("textOut").value = textOut;
+    };
+
+    let buttonEncrypt = document.getElementById("encrypt");
+    buttonEncrypt.onclick = encrypt;
+
+    let buttonDecrypt = document.getElementById("decrypt");
+    buttonDecrypt.onclick = decrypt;
+
+</script>
