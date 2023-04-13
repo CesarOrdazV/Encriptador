@@ -4,31 +4,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Encriptador | César Ordaz</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
-        <section class="input">
-            <form action="">
-                <textarea name="" id="textIn" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            </form>
-            <p>¡Sólo letras minúsculas y sin acentos!</p>
+        <h1 class="title">ORDUS</h1>
+        <form>
+            <textarea id="textIn" cols="20" rows="18" placeholder="Ingrese el texto aquí"></textarea>
+        </form>
+        <p class="rules">&#9888; ¡Sólo letras minúsculas y sin acentos!</p>
+        <div class="buttonArea">
             <button id="encrypt">Encriptar</button>
             <button id="decrypt">Desencriptar</button>
-        </section>
+        </div>
 
-        <section class="output">
-            <textarea id="textOut" cols="30" rows="10" disabled="true" placeholder="Ningún mensaje fue encontrado. Ingrese el texto que desee encriptar o desencriptar."></textarea>
-        </section>
+        <div class="output">
+            <textarea id="textOut" cols="20" rows="20" disabled="true"
+                placeholder="Ningún mensaje fue encontrado. Ingrese el texto que desee encriptar o desencriptar."></textarea>
+        </div>
     </main>
 
     <footer>
         <p>Desarrollado por César Ordaz.</p>
     </footer>
-    
+
     <script src="js/encrypter.js"></script>
 </body>
 

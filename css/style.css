@@ -1,22 +1,100 @@
 body {
-    background-color: lightblue;
-    width: 1440px;
-    height: 1024px;
+    background-color: #f3f5fc;
+    width: 1440;
+    height: 1024;
+}
+
+.title {
+    position: absolute;
+    color: #0a3871;
+    font-size: 48px;
+    top: 40px;
+    left: 40px;
+    width: 164px;
+    height: 48px;
+}
+
+#textIn {
+    background-color: #f3f5fc;
+    color: #0a3871;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    text-align: justify;
+    position: absolute;
+    top: 168px;
+    left: 240px;
+    width: 577px;
+    height: auto;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.rules {
+    position: absolute;
+    font-size: 14px;
+    top: 851px;
+    left: 240px;
+    width: 229px;
+    height: 18px;
+}
+
+.buttonArea {
+    position: absolute;
+    top: 885px;
+    left: 240px;
+    width: 680px;
+    height: 67px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+}
+
+#encrypt {
+    color: #f3f5fc;
+    font-size: 16px;
+    background-color: #0a3871;
+    border-radius: 24px;
+}
+
+#decrypt {
+    color: #0a3871;
+    font-size: 16px;
+    background-color: #d8dfe8;
+    border-radius: 24px;
 }
 
 .output {
+    background: #ffffff;
     position: absolute;
-    left: 1040px;
-    top: 10px;
-}
-
-#textIn{
-    background-color: lightblue;
-    border: none;
+    top: 40px;
+    left: 1000px;
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    padding: 32px;
 }
 
 #textOut {
-    background-color: white;
-    border-color: white;
-    border-radius: 10px;
+    background: none;
+    color: #0a3871;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    top: 1040px;
+    left: 600px;
+}
+
+::placeholder {
+    color:#0a3871;
 }
