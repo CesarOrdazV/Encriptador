@@ -22,9 +22,18 @@
             <button id="decrypt">Desencriptar</button>
         </div>
 
-        <div class="output">
-            <textarea id="textOut" cols="20" rows="20" disabled="true"
-                placeholder="Ningún mensaje fue encontrado. Ingrese el texto que desee encriptar o desencriptar."></textarea>
+        <div id="initoutput">
+            <img src="img/Muñeco.svg" alt="">
+
+            <div class="box">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingrese el texto que desee encriptar o desencriptar.</p>
+            </div>
+        </div>
+
+        <div id="finaloutput">
+            <textarea id="textOut" cols="20" rows="20" disabled="true"></textarea>
+            <button id="copytext">Copiar</button>
         </div>
     </main>
 

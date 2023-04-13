@@ -1,4 +1,5 @@
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #f3f5fc;
     width: 1440;
     height: 1024;
@@ -8,6 +9,7 @@ body {
     position: absolute;
     color: #0a3871;
     font-size: 48px;
+    font-weight: bold;
     top: 40px;
     left: 40px;
     width: 164px;
@@ -35,13 +37,13 @@ body {
     font-size: 14px;
     top: 851px;
     left: 240px;
-    width: 229px;
+    width: 252px;
     height: 18px;
 }
 
 .buttonArea {
     position: absolute;
-    top: 885px;
+    top: 927px;
     left: 240px;
     width: 680px;
     height: 67px;
@@ -64,7 +66,7 @@ body {
     border-radius: 24px;
 }
 
-.output {
+#initoutput {
     background: #ffffff;
     position: absolute;
     top: 40px;
@@ -75,17 +77,67 @@ body {
     padding: 32px;
 }
 
-#textOut {
-    background: none;
+#initoutput img {
+    position: relative;
+    top: 233px;
+    left: 32px;
+}
+
+#initoutput .box {
+    position: relative;
+    top: 286px;
+    left: 32px;
+    width: 336px;
+    height: 122px;
+    display: grid;
+    gap: 16px;
+}
+
+#initoutput h2 {
     color: #0a3871;
-    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#initoutput p {
+    color: #0a3871;
+    font-size: 16px;
+    text-align: center;
+}
+
+#finaloutput {
+    background: #ffffff;
+    position: absolute;
+    top: 40px;
+    left: 1000px;
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    padding: 32px;
+}
+
+#finaloutput textarea {
+    background: white;
+    color: #0a3871;
     font-size: 24px;
     text-align: justify;
-    width: 100%;
-    height: 100%;
+    background: #ffffff;
     border: none;
     resize: none;
     outline: none;
+}
+
+#copytext {
+    color: #0a3871;
+    font-size: 16px;
+    background-color: #ffffff;
+    position:absolute;
+    width: 336px;
+    height: 67px;
+    top: 887px;
+    left: 64px;
+    border-radius: 24px;
 }
 
 footer {
@@ -96,5 +148,5 @@ footer {
 }
 
 ::placeholder {
-    color:#0a3871;
+    color: #0a3871;
 }
