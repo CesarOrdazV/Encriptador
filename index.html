@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador | César Ordaz</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/encrypter.js"></script>
 </head>
 
 <body>
@@ -21,9 +22,7 @@
         </section>
 
         <section class="output">
-            <p>Ningún mensaje fue encontrado</p>
-            <p>Ingrese el texto que desee encriptar o desencriptar.</p>
-            <textarea id="textOut" cols="30" rows="10"></textarea>
+            <textarea id="textOut" cols="30" rows="10" disabled="true" placeholder="Ningún mensaje fue encontrado. Ingrese el texto que desee encriptar o desencriptar."></textarea>
         </section>
     </main>
 
@@ -33,41 +32,3 @@
 </body>
 
 </html>
-
-<script>
-
-    let dict = { "a": "ai", "e": "enter", "i": "imes", "o": "ober", "u": "ufat" };
-
-    function encrypt() {
-        let textIn;
-        let textOut;
-
-        textIn = document.getElementById("textIn").value;
-        textOut = textIn.replace(/[aeiou]/g, l => dict[l]);
-        document.getElementById("textOut").value = textOut;
-    };
-
-    let buttonEncrypt = document.getElementById("encrypt");
-    buttonEncrypt.onclick = encrypt;
-
-    function decrypt() {
-        let textIn;
-        let textOut;
-
-        textIn = document.getElementById("textIn").value;
-
-        function allReplace(str, obj) {
-            for (const w in obj) {
-                str = str.replace(new RegExp(obj[w], 'g'), w);
-            }
-            return str;
-        };
-
-        textOut = allReplace(textIn, dict);
-        document.getElementById("textOut").value = textOut;
-    };
-
-    let buttonDecrypt = document.getElementById("decrypt");
-    buttonDecrypt.onclick = decrypt;
-
-</script>
