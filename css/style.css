@@ -150,3 +150,85 @@ footer {
 ::placeholder {
     color: #0a3871;
 }
+
+@media screen and (max-width:480px) {
+
+    body {
+        width: 375;
+        height: 933;
+    }
+
+    .title {
+        width: 375px;
+        height: 96px;
+    }
+    
+    #textIn {
+        top: 152px;
+        left: 15px;
+        width: 343px;
+    }
+    
+    .rules {
+        top: 451px;
+        left: 16px;
+        width: 327px;
+        height: 186px;
+    }
+    
+    .buttonArea {
+        top: 486px;
+        left: 16px;
+        width: 383px;
+        height: 158px;
+        grid-template-columns: auto;
+    }
+    
+    #initoutput {
+        top: 707px;
+        left: 24px;
+        width: 371px;
+        height: 186px;
+        padding: 0px;
+    }
+    
+    #initoutput img {
+        display: none;
+    }
+    
+    #initoutput .box {
+        top: 32px;
+        width: 307px;
+        height: 186px;
+    }
+    
+    
+    #finaloutput {
+        top: 707px;
+        left: 24px;
+        width: 307px;
+        height: 186px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #finaloutput textarea {
+        top: auto;
+        left: auto;
+        width: 327px;
+        height: 126px;
+    }
+    
+    #copytext {
+        top: 173px;
+        left: 48px;
+        width: 279px;
+        height: 67px;
+    }
+    
+    footer {
+        top: 900px;
+        left: 96px;
+    }
+    
+}
