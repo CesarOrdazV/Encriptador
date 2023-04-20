@@ -59,11 +59,27 @@ body {
     border-radius: 24px;
 }
 
+#encrypt:hover {
+    background-color: #052051;
+}
+
+#encrypt:active {
+    transform: scale(0.97);
+}
+
 #decrypt {
     color: #0a3871;
     font-size: 16px;
     background-color: #d8dfe8;
     border-radius: 24px;
+}
+
+#decrypt:hover {
+    background-color: #aab2d5;
+}
+
+#decrypt:active {
+    transform: scale(0.97);
 }
 
 #initoutput {
@@ -140,6 +156,14 @@ body {
     border-radius: 24px;
 }
 
+#copytext:hover {
+    background-color: #eaecef;
+}
+
+#copytext:active {
+    transform: scale(0.97);
+}
+
 footer {
     position: absolute;
     text-align: center;
@@ -173,7 +197,7 @@ footer {
         top: 451px;
         left: 16px;
         width: 327px;
-        height: 186px;
+        height: 18px;
     }
     
     .buttonArea {
@@ -229,6 +253,89 @@ footer {
     footer {
         top: 963px;
         left: 96px;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    body {
+        width: 768;
+        height: 1174;
+    }
+
+    .title {
+        top: 74px;
+        left: 40px;
+        width: 768px;
+        height: 96px;
+    }
+    
+    #textIn {
+        top: 240px;
+        left: 40px;
+        width: 688px;
+    }
+    
+    .rules {
+        top: 636px;
+        left: 40px;
+        width: 280px;
+        height: 18px;
+    }
+    
+    .buttonArea {
+        top: 690px;
+        left: 50px;
+        width: 688px;
+        height: 67px;
+        grid-template-columns: auto auto;
+    }
+    
+    #initoutput {
+        top: 800px;
+        left: 50px;
+        width: 688px;
+        height: 163px;
+        padding: 0px;
+    }
+    
+    #initoutput img {
+        display: none;
+    }
+    
+    #initoutput .box {
+        top: 32px;
+        left: auto;
+        width: 688px;
+        height: 133px;
+    }
+    
+    
+    #finaloutput {
+        top: 800px;
+        left: 50px;
+        width: 625px;
+        height: 133px;
+    }
+    
+    #finaloutput textarea {
+        top: auto;
+        left: auto;
+        width: 625px;
+        height: 70px;
+    }
+    
+    #copytext {
+        top: 120px;
+        left: 48px;
+        width: 593px;
+        height: 67px;
+    }
+    
+    footer {
+        top: 1050px;
+        left: 316px;
     }
     
 }
