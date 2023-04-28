@@ -1,3 +1,3 @@
 # ONE Challenge 1
 
-Proyecto para el primer challenge del programa ONE.
+Un sencillo encriptador-desencriotador para el primer challenge del programa ONE-G5.
