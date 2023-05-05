@@ -57,3 +57,4 @@ function copyText() {
 
 let buttonCopy = document.getElementById("copytext"); // Lectura del estado del botón para copiar
 buttonCopy.onclick = copyText; // Llamada de la función para copiar el texto en el output con el click
+
