@@ -1,9 +1,9 @@
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
 body {
@@ -14,25 +14,26 @@ body {
     color: lightgrey;
     background-color: #282B2E;
     overflow: hidden;
+    font-size: 18px;
 }
 
 header {
-    height: 5%;
-    font-size: 24px;
+    height: 10%;
+    font-size: 36px;
     font-weight: bold;
 }
 
-.main {
-    height: 95%;
+main {
+    height: 90%;
 }
 
 .input-area {
-    height: 30%;
+    height: 60%;
     padding: 3%;
 }
 
 #input {
-    height: 100%;
+    height: 60%;
     width: 100%;
     color: lightgrey;
     background-color: #282B2E;
@@ -48,7 +49,7 @@ header {
 }
 
 .button-area {
-    height: 20%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     gap: 10%;
@@ -62,6 +63,15 @@ header {
     color: #282B2E;
 }
 
+.encrypt-button:hover {
+    background-color: #BABABA;
+}
+
+.encrypt-button:active {
+    background-color: #A1A1A1;
+    transform: scale(0.95);
+}
+
 .decrypt-button {
     height: 45%;
     border: 1px solid lightgrey;
@@ -70,14 +80,23 @@ header {
     color: lightgrey;
 }
 
+.decrypt-button:hover {
+    background-color: #373C40;
+}
+
+.decrypt-button:active {
+    background-color: #42484D;
+    transform: scale(0.95);
+}
+
 .output-area {
-    height: 30%;
+    height: 35%;
     padding: 3%;
 }
 
 .output-init {
     height: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -86,25 +105,24 @@ header {
 }
 
 .output-first-message {
-    font-size: 18px;
     font-weight: bold;
 }
 
 img {
     display: none;
-    
 }
 
 .output-response {
     height: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 5%;
 }
 
 #output {
-    height: 75%;
+    height: 45%;
     width: 100%;
     background-color: #282B2E;
     resize: none;
@@ -113,15 +131,144 @@ img {
 }
 
 .copy {
-    height: 25%;
+    width: 60%;
+    height: 20%;
     border: 1px solid lightgrey;
     border-radius: 10px;
     background-color: #282B2E;
     color: lightgrey;
 }
 
+.copy:hover {
+    background-color: #373C40;
+}
+
+.copy:active {
+    background-color: #42484D;
+    transform: scale(0.95);
+}
+
 footer {
     height: 5%;
     justify-content: center;
     text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (min-width:640px) {
+    body {
+        font-size: 24px;
+    }
+
+    header {
+        font-size: 48px;
+    }
+
+    .input-area {
+        height: 50%;
+    }
+
+    #input {
+        height: 70%;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+
+    .button-area {
+        height: 30%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .encrypt-button {
+        height: 55%;
+        width: 45%;
+        border-radius: 20px;
+    }
+
+    .decrypt-button {
+        height: 55%;
+        width: 45%;
+        border-radius: 20px;
+    }
+
+    .output-area {
+        height: 40%;
+    }
+
+    #output {
+        height: 60%;
+    }
+
+    .copy {
+        width: 30%;
+        height: 20%;
+        border-radius: 20px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        width: 100%;
+        height: 10%;
+        font-size: 56px;
+    }
+
+    main {
+        width: 100%;
+        height: 85%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-area {
+        width:66%;
+        height: 100%;
+    }
+
+    #input {
+        height: 60%;
+    }
+
+    .message {
+        height: 10%;
+    }
+
+    .button-area {
+        height: 25%;
+    }
+
+    .output-area {
+        width: 34%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        display: initial;
+    }
+
+    .output-response {
+        width: 100%;
+        height: 100%;
+    }
+
+    .copy {
+        width: 65%;
+        height: 10%;
+    }
+
+    footer {
+        height: 10%;
+    }
 }

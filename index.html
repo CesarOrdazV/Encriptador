@@ -12,33 +12,35 @@
 <body>
     <header>ORDUS</header>
 
-    <main class="main">
+    <main>
         <div class="input-area">
             <textarea name="input" id="input" placeholder="Ingrese aquí su texto a encriptar"></textarea>
-        </div>
 
-        <div class="message">⚠ ¡El encriptador no conserva las mayúsculas ni los acentos!</div>
+            <div class="message">⚠ ¡El encriptador no conserva las mayúsculas ni los acentos!</div>
 
-        <div class="button-area">
-            <button class="encrypt-button">Encriptar</button>
-            <button class="decrypt-button">Desencriptar</button>
+            <div class="button-area">
+                <button class="encrypt-button" id="encrypt-button">Encriptar</button>
+                <button class="decrypt-button" id="decrypt-button">Desencriptar</button>
+            </div>
         </div>
 
         <div class="output-area">
-            <div class="output-init">
+            <div class="output-init" id="output-init">
                 <img src="img/security.jpg" alt="Security image" width="100%">
                 <p class="output-first-message">Ningún mensaje fue encontrado</p>
                 <p class="output-secon-message">Ingrese el texto a encriptar</p>
             </div>
 
-            <div class="output-response">
-                <textarea name="output" id="output" disabled="true">Perro</textarea>
-                <button class="copy">Copiar</button>
+            <div class="output-response" id="output-response">
+                <textarea name="output" id="output" disabled="true"></textarea>
+                <button class="copy" id="copy">Copiar</button>
             </div>
         </div>
     </main>
 
     <footer>Desarrolado por César Ordaz</footer>
+
+    <script src="js/encrypter.js"></script>
 </body>
 
 </html>
