@@ -7,20 +7,7 @@ El proyecto consiste en un pequeño encriptador-desencriptador implementado sobr
 ![Encriptador desktop](img/desktop.png)
 
 ## Responsivo
-Desarrollado con responsividad en mente el encriptador se adapta a pantallas de escritorio:
-
-![Desktop encoder](img/desktop-enc.png)
-![Desktop decoder](img/desktop-dec.png)
-
-tabletas:
-
-![Tablet encoder](img/tablet-enc.jpg)
-![Tablet decoder](img/tablet-dec.jpg)
-
-y teléfonos móviles:
-
-![Mobile encoder](img/mobile-enc.png)
-![Mobile decoder](img/mobile-dec.png)
+Desarrollado con responsividad en mente el encriptador se adapta a pantallas de escritorio ([desktop 1](img/desktop-enc.png) y [desktop 2](img/desktop-dec.png)), tabletas ([tablet 1](img/tablet-enc.jpg) y [tablet 2](img/tablet-dec.jpg)) y teléfonos móviles ([mobile 1](img/mobile-enc.png) y [mobile 2](img/mobile-dec.png)).
 
 ## Copiar
 El encriptador cuenta con la opción de copiar el texto encriptado-desencriptado.
