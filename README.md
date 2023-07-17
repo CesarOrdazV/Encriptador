@@ -1,4 +1,4 @@
-# ONE Challenge 1
+# Challenge ONE - Principiante en programación
 
 Este proyecto responde al challenge: [Challenge ONE - Principiante en programación](https://www.aluracursos.com/challenges/challenge-one-logica) para el grupo G5 del programa [Oracle Next Education](https://www.oracle.com/mx/education/oracle-next-education/) ofrecido por [Alura Latam](https://www.aluracursos.com/) en conjunto con [Oracle](https://www.oracle.com/mx/).
 
