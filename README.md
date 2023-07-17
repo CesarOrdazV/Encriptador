@@ -4,12 +4,28 @@ Este proyecto responde al challenge: [Challenge ONE - Principiante en programaci
 
 El proyecto consiste en un pequeño encriptador-desencriptador implementado sobre JS y HTML-CSS para la interfase de usuario.
 
+![Encriptador desktop](img/desktop.png)
+
 ## Responsivo
-Desarrollado con responsividad en mente el encriptador se adapta a pantallas de escritorio, tabletas y teléfonos móviles.
+Desarrollado con responsividad en mente el encriptador se adapta a pantallas de escritorio:
+
+![Desktop encoder](img/desktop-enc.png)
+![Desktop decoder](img/desktop-dec.png)
+
+tabletas:
+
+![Tablet encoder](img/tablet-enc.jpg)
+![Tablet decoder](img/tablet-dec.jpg)
+
+y teléfonos móviles:
+
+![Mobile encoder](img/mobile-enc.png)
+![Mobile decoder](img/mobile-dec.png)
 
 ## Copiar
 El encriptador cuenta con la opción de copiar el texto encriptado-desencriptado.
 
+![Copy text](img/desktop-copy.png)
 
 ## Método de cifrado
 La base del encriptado es la sustitución de los caracteres:
