@@ -13,7 +13,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: lightgrey;
     background-color: #282B2E;
-    overflow: hidden;
     font-size: 18px;
 }
 
@@ -24,7 +23,7 @@ header {
 }
 
 main {
-    height: 85%;
+    height: 90%;
 }
 
 .input-area {
