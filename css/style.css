@@ -12,7 +12,7 @@ body {
     padding: 3%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: lightgrey;
-    background-color: #282B2E;
+    background-color: #262c30;
     font-size: 18px;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -41,7 +41,7 @@ main {
     height: 60%;
     width: 100%;
     color: lightgrey;
-    background-color: #282B2E;
+    background-color: #262c30;
     text-align: center;
     resize: none;
     border-radius: 10px;
@@ -62,18 +62,18 @@ main {
 
 .encrypt-button {
     height: 45%;
-    border: 1px solid #282B2E;
+    border: 1px solid #262c30;
     border-radius: 10px;
     background-color: lightgrey;
     color: #282B2E;
 }
 
 .encrypt-button:hover {
-    background-color: #BABABA;
+    background-color: #c8c8c8;
 }
 
 .encrypt-button:active {
-    background-color: #A1A1A1;
+    background-color: #bdbdbd;
     transform: scale(0.95);
 }
 
@@ -81,16 +81,16 @@ main {
     height: 45%;
     border: 1px solid lightgrey;
     border-radius: 10px;
-    background-color: #282B2E;
+    background-color: #262c30;
     color: lightgrey;
 }
 
 .decrypt-button:hover {
-    background-color: #373C40;
+    background-color: #2a3134;
 }
 
 .decrypt-button:active {
-    background-color: #42484D;
+    background-color: #2e3538;
     transform: scale(0.95);
 }
 
@@ -129,7 +129,7 @@ img {
 #output {
     height: 45%;
     width: 100%;
-    background-color: #282B2E;
+    background-color: #262c30;
     resize: none;
     color: lightgrey;
     text-align: center;
@@ -140,16 +140,16 @@ img {
     height: 20%;
     border: 1px solid lightgrey;
     border-radius: 10px;
-    background-color: #282B2E;
+    background-color: #262c30;
     color: lightgrey;
 }
 
 .copy:hover {
-    background-color: #373C40;
+    background-color: #2a3134;
 }
 
 .copy:active {
-    background-color: #42484D;
+    background-color: #2e3538;
     transform: scale(0.95);
 }
 
@@ -192,13 +192,13 @@ footer {
     .encrypt-button {
         height: 55%;
         width: 45%;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     .decrypt-button {
         height: 55%;
         width: 45%;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     .output-area {
@@ -212,7 +212,7 @@ footer {
     .copy {
         width: 30%;
         height: 20%;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     footer {

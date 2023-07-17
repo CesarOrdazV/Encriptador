@@ -17,7 +17,6 @@ function allReplace(str, obj) {
 // Función para el output
 function Output() {
     document.getElementById("output").value = output; // Envío del texto cifrado al campo de salida
-    document.getElementById("input").value = ""; // Limpieza del input
     document.getElementById("output-init").style.display = "none"; // Muestra el cuadro con el output
     document.getElementById("output-response").style.display = "flex"; // Muestra el cuadro con el output
     if (input === "") {
@@ -50,9 +49,9 @@ buttonDecrypt.onclick = decrypt; // Llamada de la función decrypt en el click
 
 // Función para copiar texto
 function copyText() {
-
     let text = document.getElementById('output').value; // Lectura del texto en el output
     navigator.clipboard.writeText(text); // Copia del texto al portapapeles
+    document.getElementById("input").value = ""; // Limpieza del input
 }
 
 let buttonCopy = document.getElementById("copy"); // Lectura del estado del botón para copiar
