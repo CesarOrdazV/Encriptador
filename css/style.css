@@ -1,341 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f3f5fc;
-    width: 1440;
-    height: 1024;
+    width: 94vw;
+    height: 94vh;
+    padding: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightgrey;
+    background-color: #282B2E;
+    overflow: hidden;
+    font-size: 18px;
 }
 
-.title {
-    position: absolute;
-    color: #0a3871;
-    font-size: 48px;
+header {
+    height: 10%;
+    font-size: 36px;
     font-weight: bold;
-    top: 40px;
-    left: 40px;
-    width: 164px;
-    height: 48px;
 }
 
-#textIn {
-    background-color: #f3f5fc;
-    color: #0a3871;
-    font-family: 'Roboto', sans-serif;
-    font-size: 32px;
-    text-align: justify;
-    position: absolute;
-    top: 168px;
-    left: 240px;
-    width: 577px;
-    height: auto;
-    border: none;
+main {
+    height: 90%;
+}
+
+.input-area {
+    height: 60%;
+    padding: 3%;
+}
+
+#input {
+    height: 60%;
+    width: 100%;
+    color: lightgrey;
+    background-color: #282B2E;
+    text-align: center;
     resize: none;
-    outline: none;
+    border-radius: 10px;
 }
 
-.rules {
-    position: absolute;
-    font-size: 14px;
-    top: 851px;
-    left: 240px;
-    width: 252px;
-    height: 18px;
-}
-
-.buttonArea {
-    position: absolute;
-    top: 927px;
-    left: 240px;
-    width: 680px;
-    height: 67px;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 24px;
-}
-
-#encrypt {
-    color: #f3f5fc;
-    font-size: 16px;
-    background-color: #0a3871;
-    border-radius: 24px;
-}
-
-#encrypt:hover {
-    background-color: #052051;
-}
-
-#encrypt:active {
-    transform: scale(0.97);
-}
-
-#decrypt {
-    color: #0a3871;
-    font-size: 16px;
-    background-color: #d8dfe8;
-    border-radius: 24px;
-}
-
-#decrypt:hover {
-    background-color: #aab2d5;
-}
-
-#decrypt:active {
-    transform: scale(0.97);
-}
-
-#initoutput {
-    background: #ffffff;
-    position: absolute;
-    top: 40px;
-    left: 1000px;
-    width: 400px;
-    height: 944px;
-    border-radius: 32px;
-    padding: 32px;
-}
-
-#initoutput img {
-    position: relative;
-    top: 233px;
-    left: 32px;
-}
-
-#initoutput .box {
-    position: relative;
-    top: 286px;
-    left: 32px;
-    width: 336px;
-    height: 122px;
-    display: grid;
-    gap: 16px;
-}
-
-#initoutput h2 {
-    color: #0a3871;
-    font-size: 24px;
-    font-weight: bold;
+.message {
+    height: 10%;
+    font-size: 12px;
     text-align: center;
 }
 
-#initoutput p {
-    color: #0a3871;
-    font-size: 16px;
+.button-area {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.encrypt-button {
+    height: 45%;
+    border: 1px solid #282B2E;
+    border-radius: 10px;
+    background-color: lightgrey;
+    color: #282B2E;
+}
+
+.encrypt-button:hover {
+    background-color: #BABABA;
+}
+
+.encrypt-button:active {
+    background-color: #A1A1A1;
+    transform: scale(0.95);
+}
+
+.decrypt-button {
+    height: 45%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: #282B2E;
+    color: lightgrey;
+}
+
+.decrypt-button:hover {
+    background-color: #373C40;
+}
+
+.decrypt-button:active {
+    background-color: #42484D;
+    transform: scale(0.95);
+}
+
+.output-area {
+    height: 35%;
+    padding: 3%;
+}
+
+.output-init {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+}
+
+.output-first-message {
+    font-weight: bold;
+}
+
+img {
+    display: none;
+}
+
+.output-response {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#output {
+    height: 45%;
+    width: 100%;
+    background-color: #282B2E;
+    resize: none;
+    color: lightgrey;
     text-align: center;
 }
 
-#finaloutput {
-    background: #ffffff;
-    position: absolute;
-    top: 40px;
-    left: 1000px;
-    width: 400px;
-    height: 944px;
-    border-radius: 32px;
-    padding: 32px;
+.copy {
+    width: 60%;
+    height: 20%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: #282B2E;
+    color: lightgrey;
 }
 
-#finaloutput textarea {
-    background: white;
-    color: #0a3871;
-    font-size: 24px;
-    text-align: justify;
-    background: #ffffff;
-    border: none;
-    resize: none;
-    outline: none;
+.copy:hover {
+    background-color: #373C40;
 }
 
-#copytext {
-    color: #0a3871;
-    font-size: 16px;
-    background-color: #ffffff;
-    position:absolute;
-    width: 336px;
-    height: 67px;
-    top: 887px;
-    left: 64px;
-    border-radius: 24px;
-}
-
-#copytext:hover {
-    background-color: #eaecef;
-}
-
-#copytext:active {
-    transform: scale(0.97);
+.copy:active {
+    background-color: #42484D;
+    transform: scale(0.95);
 }
 
 footer {
-    position: absolute;
+    height: 5%;
+    justify-content: center;
     text-align: center;
-    top: 1030px;
-    left: 600px;
+    font-size: 12px;
 }
 
-::placeholder {
-    color: #0a3871;
-}
-
-@media screen and (max-width:480px) {
-
+@media screen and (min-width:640px) {
     body {
-        width: 375;
-        height: 933;
+        font-size: 24px;
     }
 
-    .title {
-        width: 375px;
-        height: 96px;
+    header {
+        font-size: 48px;
     }
-    
-    #textIn {
-        top: 152px;
-        left: 15px;
-        width: 343px;
+
+    .input-area {
+        height: 50%;
     }
-    
-    .rules {
-        top: 451px;
-        left: 16px;
-        width: 327px;
-        height: 18px;
+
+    #input {
+        height: 70%;
     }
-    
-    .buttonArea {
-        top: 486px;
-        left: 16px;
-        width: 383px;
-        height: 158px;
-        grid-template-columns: auto;
+
+    .message {
+        font-size: 18px;
     }
-    
-    #initoutput {
-        top: 707px;
-        left: 24px;
-        width: 371px;
-        height: 186px;
-        padding: 0px;
+
+    .button-area {
+        height: 30%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
     }
-    
-    #initoutput img {
-        display: none;
+
+    .encrypt-button {
+        height: 55%;
+        width: 45%;
+        border-radius: 20px;
     }
-    
-    #initoutput .box {
-        top: 32px;
-        width: 307px;
-        height: 186px;
+
+    .decrypt-button {
+        height: 55%;
+        width: 45%;
+        border-radius: 20px;
     }
-    
-    
-    #finaloutput {
-        top: 707px;
-        left: 24px;
-        width: 307px;
-        height: 186px;
+
+    .output-area {
+        height: 40%;
+    }
+
+    #output {
+        height: 60%;
+    }
+
+    .copy {
+        width: 30%;
+        height: 20%;
+        border-radius: 20px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        width: 100%;
+        height: 10%;
+        font-size: 56px;
+    }
+
+    main {
+        width: 100%;
+        height: 85%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
-    
-    #finaloutput textarea {
-        top: auto;
-        left: auto;
-        width: 327px;
-        height: 126px;
+
+    .input-area {
+        width:66%;
+        height: 100%;
     }
-    
-    #copytext {
-        top: 173px;
-        left: 48px;
-        width: 279px;
-        height: 67px;
+
+    #input {
+        height: 60%;
     }
-    
+
+    .message {
+        height: 10%;
+    }
+
+    .button-area {
+        height: 25%;
+    }
+
+    .output-area {
+        width: 34%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        display: initial;
+    }
+
+    .output-response {
+        width: 100%;
+        height: 100%;
+    }
+
+    .copy {
+        width: 65%;
+        height: 10%;
+    }
+
     footer {
-        top: 963px;
-        left: 96px;
+        height: 10%;
     }
-    
-}
-
-@media screen and (min-width:768px) and (max-width:1024px) {
-
-    body {
-        width: 768;
-        height: 1174;
-    }
-
-    .title {
-        top: 74px;
-        left: 40px;
-        width: 768px;
-        height: 96px;
-    }
-    
-    #textIn {
-        top: 240px;
-        left: 40px;
-        width: 688px;
-    }
-    
-    .rules {
-        top: 636px;
-        left: 40px;
-        width: 280px;
-        height: 18px;
-    }
-    
-    .buttonArea {
-        top: 690px;
-        left: 50px;
-        width: 688px;
-        height: 67px;
-        grid-template-columns: auto auto;
-    }
-    
-    #initoutput {
-        top: 800px;
-        left: 50px;
-        width: 688px;
-        height: 163px;
-        padding: 0px;
-    }
-    
-    #initoutput img {
-        display: none;
-    }
-    
-    #initoutput .box {
-        top: 32px;
-        left: auto;
-        width: 688px;
-        height: 133px;
-    }
-    
-    
-    #finaloutput {
-        top: 800px;
-        left: 50px;
-        width: 625px;
-        height: 133px;
-    }
-    
-    #finaloutput textarea {
-        top: auto;
-        left: auto;
-        width: 625px;
-        height: 70px;
-    }
-    
-    #copytext {
-        top: 120px;
-        left: 48px;
-        width: 593px;
-        height: 67px;
-    }
-    
-    footer {
-        top: 1050px;
-        left: 316px;
-    }
-    
 }

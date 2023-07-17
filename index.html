@@ -5,41 +5,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Encriptador | César Ordaz</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <title>Encriptador | ORDUS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header>ORDUS</header>
+
     <main>
-        <h1 class="title">ORDUS</h1>
-        <form>
-            <textarea id="textIn" cols="20" rows="18" placeholder="Ingrese el texto aquí"></textarea>
-        </form>
-        <p class="rules">&#9888; ¡Sólo letras minúsculas y sin acentos!</p>
-        <div class="buttonArea">
-            <button id="encrypt">Encriptar</button>
-            <button id="decrypt">Desencriptar</button>
-        </div>
+        <div class="input-area">
+            <textarea name="input" id="input" placeholder="Ingrese aquí su texto a encriptar"></textarea>
 
-        <div id="initoutput">
-            <img src="img/Muñeco.svg" alt="">
+            <div class="message">⚠ ¡El encriptador no conserva las mayúsculas ni los acentos!</div>
 
-            <div class="box">
-                <h2>Ningún mensaje fue encontrado</h2>
-                <p>Ingrese el texto que desee encriptar o desencriptar.</p>
+            <div class="button-area">
+                <button class="encrypt-button" id="encrypt-button">Encriptar</button>
+                <button class="decrypt-button" id="decrypt-button">Desencriptar</button>
             </div>
         </div>
 
-        <div id="finaloutput">
-            <textarea id="textOut" cols="20" rows="20" disabled="true"></textarea>
-            <button id="copytext">Copiar</button>
+        <div class="output-area">
+            <div class="output-init" id="output-init">
+                <img src="img/security.jpg" alt="Security image" width="100%">
+                <p class="output-first-message">Ningún mensaje fue encontrado</p>
+                <p class="output-secon-message">Ingrese el texto a encriptar</p>
+            </div>
+
+            <div class="output-response" id="output-response">
+                <textarea name="output" id="output" disabled="true"></textarea>
+                <button class="copy" id="copy">Copiar</button>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>Desarrollado por César Ordaz.</p>
-    </footer>
+    <footer>Desarrollado por César Ordaz</footer>
 
     <script src="js/encrypter.js"></script>
 </body>
